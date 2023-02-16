@@ -11,15 +11,17 @@
 .logo {
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 .github {
   border: 1px solid white;
   color: white;
-  padding: 10px 40px;
+  padding: 6px 16px;
   background-color: transparent;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 16px;
 }
 .githublink {
   color: inherit;
