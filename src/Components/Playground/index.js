@@ -1,11 +1,13 @@
 import React from "react";
-import styles from "./playground.module.css";
 
-function Playground() {
+import styles from "./playground.module.css";
+import Navbar from "../Navbar";
+
+function Playground(props) {
+  var { primaryColor, secondaryColor } = props;
   return (
-    <div className={styles.background}>
-      <h1>Screenbows</h1>
-      <p>Magical Colors for your screen</p>
+    <div className={styles.background} style={{ background: primaryColor }}>
+      <Navbar secondaryColor={secondaryColor} />
     </div>
   );
 }
