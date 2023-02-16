@@ -1,11 +1,12 @@
 import React from "react";
+
 import styles from "./playground.module.css";
+import Navbar from "../Navbar";
 
 function Playground() {
   return (
     <div className={styles.background}>
-      <h1>Screenbows</h1>
-      <p>Magical Colors for your screen</p>
+      <Navbar />
     </div>
   );
 }
