@@ -8,14 +8,22 @@ function App() {
   const [primaryColor, setPrimaryColor] = useState();
   const [secondaryColor, setSecondaryColor] = useState();
 
-  useEffect(() => {
-    var { primary, secondary } = randomColorGenerator();
+  const getRandomColors = (hex) => {
+    console.log(hex);
+    var { primary, secondary } = randomColorGenerator(hex);
     setPrimaryColor(primary);
     setSecondaryColor(secondary);
+  };
+  useEffect(() => {
+    getRandomColors();
   }, []);
 
   return (
-    <Playground primaryColor={primaryColor} secondaryColor={secondaryColor} />
+    <Playground
+      primaryColor={primaryColor}
+      secondaryColor={secondaryColor}
+      getRandomColors={getRandomColors}
+    />
   );
 }
 
