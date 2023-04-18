@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+
+import "./App.css";
+import Playground from "./Components/Playground";
+import { randomColorGenerator } from "./Utilities/UtilityFunctions";
 
 function App() {
+  const [primaryColor, setPrimaryColor] = useState();
+  const [secondaryColor, setSecondaryColor] = useState();
+
+  const getRandomColors = (hex) => {
+    console.log(hex);
+    var { primary, secondary } = randomColorGenerator(hex);
+    setPrimaryColor(primary);
+    setSecondaryColor(secondary);
+  };
+  useEffect(() => {
+    getRandomColors();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Playground
+      primaryColor={primaryColor}
+      secondaryColor={secondaryColor}
+      getRandomColors={getRandomColors}
+    />
   );
 }
 
