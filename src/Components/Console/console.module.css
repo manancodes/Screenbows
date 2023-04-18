@@ -1,0 +1,67 @@
+.console {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600px;
+  height: 90px;
+  padding: 30px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  margin: 100px;
+}
+.newColorBtn {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+  line-height: 0;
+  margin-top: 2px;
+}
+.colorControls {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  margin-top: -16px;
+  font-size: x-small;
+}
+.box > p {
+  margin: 0;
+  margin-bottom: 3px;
+}
+.inputContainer {
+  width: 78px;
+  border: 1px solid black;
+  height: 38px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hexbox {
+  width: 110px;
+  justify-content: flex-start;
+  margin-right: 20px;
+}
+.hexspan {
+  padding-left: 10px;
+  padding-right: 0px;
+  color: grey;
+  padding: 6px;
+  padding-right: 0;
+}
+.hexinput {
+  padding-left: 5px;
+}
+.input {
+  border: none;
+  width: 100%;
+  font-size: 13px;
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  height: 40px;
+}

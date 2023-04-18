@@ -1,4 +1,7 @@
 /* Global styles */
+* {
+  font-family: "Space Mono", monospace;
+}
 body {
   margin: 0;
   font-family: "Space Mono", monospace;
