@@ -8,3 +8,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.noOverflow {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
