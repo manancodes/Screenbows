@@ -8,9 +8,8 @@ function App() {
   const [primaryColor, setPrimaryColor] = useState();
   const [secondaryColor, setSecondaryColor] = useState();
 
-  const getRandomColors = (hex) => {
-    console.log(hex);
-    var { primary, secondary } = randomColorGenerator(hex);
+  const getRandomColors = (e) => {
+    var { primary, secondary } = randomColorGenerator(e);
     setPrimaryColor(primary);
     setSecondaryColor(secondary);
   };
