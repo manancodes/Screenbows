@@ -24,7 +24,7 @@
   justify-content: space-between;
 }
 .box {
-  margin-top: -16px;
+  margin-top: -18px;
   font-size: x-small;
 }
 .box > p {
@@ -77,4 +77,65 @@
 input:focus,
 button:focus {
   outline: none;
+}
+.dimensionsbox {
+  display: flex;
+  justify-content: space-between;
+}
+.dimensionsbox > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.console input {
+  border: none;
+  width: 100%;
+  font-size: 13px;
+}
+.console input.right {
+  text-align: right;
+}
+.inputBox {
+  width: 78px;
+  border: 1px solid black;
+  height: 38px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+span {
+  color: grey;
+  padding: 10px;
+  padding-left: 0px;
+}
+.console input.right {
+  text-align: right;
+}
+.upperbox {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 720px) {
+  .console {
+    width: 40%;
+    height: 210px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 40px;
+    transform: scale(1.3);
+    position: fixed;
+    top: 10%;
+  }
+  .upperbox {
+    margin-top: 20px;
+  }
+  .dimensionsbox > div {
+    margin: 0;
+  }
+  .console .hexbox {
+    margin: 0px;
+  }
+  .right {
+    margin-right: 4px;
+  }
 }

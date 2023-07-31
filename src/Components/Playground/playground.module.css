@@ -15,3 +15,14 @@
   position: absolute;
   z-index: -1;
 }
+.githubMobile {
+  display: none;
+}
+@media only screen and (max-width: 720px) {
+  .githubMobile {
+    display: block;
+    position: fixed;
+    bottom: 100px;
+    transform: scale(1.3);
+  }
+}

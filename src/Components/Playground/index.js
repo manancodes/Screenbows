@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./playground.module.css";
 import Navbar from "../Navbar";
 import Console from "../Console";
+import GithubButton from "../GithubButton";
 
 function Playground(props) {
   var { primaryColor, secondaryColor, getRandomColors } = props;
@@ -10,6 +11,9 @@ function Playground(props) {
     height: window.innerHeight,
     width: window.innerWidth,
   });
+  const changeDimensions = (e) => {
+    setdimensions({ ...dimensions, [e.target.name]: Number(e.target.value) });
+  };
   return (
     <div className={styles.background} style={{ background: primaryColor }}>
       <div className={styles.noOverflow}>
@@ -23,7 +27,15 @@ function Playground(props) {
         />
       </div>
       <Navbar secondaryColor={secondaryColor} />
-      <Console primaryColor={primaryColor} getRandomColors={getRandomColors} />
+      <Console
+        primaryColor={primaryColor}
+        getRandomColors={getRandomColors}
+        changeDimensions={changeDimensions}
+        dimensions={dimensions}
+      />
+      <div className={styles.githubMobile}>
+        <GithubButton secondaryColor={secondaryColor} />
+      </div>
     </div>
   );
 }
