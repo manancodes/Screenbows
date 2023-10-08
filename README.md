@@ -1,6 +1,6 @@
 # Getting Started
 
-The project is deployed at [Screenbows](https://manancodes.github.io/screenbows/)
+The project is deployed at [Screenbows](https://manancodes.github.io/Screenbows/)
 
 ## Get the project ready for development
 
