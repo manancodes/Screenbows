@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/screenbows/static/css/main.d1b511bd.css",
-    "main.js": "/screenbows/static/js/main.17652995.js",
-    "index.html": "/screenbows/index.html",
-    "main.d1b511bd.css.map": "/screenbows/static/css/main.d1b511bd.css.map",
-    "main.17652995.js.map": "/screenbows/static/js/main.17652995.js.map"
+    "main.css": "/Screenbows/static/css/main.d1b511bd.css",
+    "main.js": "/Screenbows/static/js/main.17652995.js",
+    "index.html": "/Screenbows/index.html",
+    "main.d1b511bd.css.map": "/Screenbows/static/css/main.d1b511bd.css.map",
+    "main.17652995.js.map": "/Screenbows/static/js/main.17652995.js.map"
   },
   "entrypoints": [
     "static/css/main.d1b511bd.css",
