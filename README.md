@@ -1,5 +1,5 @@
 # Screenbows
-The project is deployed [here](https://manancodes.github.io/Screenbows/)
+The project is deployed at [Screenbows](https://manancodes.github.io/Screenbows/)
 
 Screenbows is a tool to generate magical colours for your screen and download them as images.
 
