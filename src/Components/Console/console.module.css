@@ -67,6 +67,10 @@
 .downloadBtn {
   padding: 0px 28px;
 }
+.patternBtn {
+  padding: 0px 28px;
+  margin-right: 10px;
+}
 .console button {
   background-color: black;
   border: none;
