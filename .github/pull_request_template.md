@@ -12,11 +12,13 @@ Briefly describe the changes you've made in this pull request.
 
 Please check all the applicable boxes. To mark a box as done, use the following conventions:
 
+```
 - [x] - Correct; marked as done
 - [ ] - Not correct; marked as **not** done
+```
 
 - [ ] My code follows the code style of this project.
-- [ ] I've written clear and short commit messages.
+- [ ] My commit messages are clear and concise
 - [ ] The title and description of the PR are clear and explain the approach.
 - [ ] I have performed a self-review of the code.
 - [ ] I have added proper comments wherever needed.
