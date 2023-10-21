@@ -11,10 +11,7 @@
   margin: 100px;
 }
 .newColorBtn {
-  height: 38px;
   width: 40px;
-  padding: 0;
-  margin: 0;
   margin-right: 20px;
   line-height: 0;
 }
@@ -28,21 +25,16 @@
   margin-bottom: 3px;
 }
 .inputContainer {
-  width: 78px;
   border: 1px solid black;
   height: 38px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 .hexbox {
   width: 110px;
-  justify-content: flex-start;
   margin-right: 20px;
 }
 .hexspan {
-  padding-left: 10px;
-  padding-right: 0px;
   color: grey;
   padding: 6px;
   padding-right: 0;
@@ -77,13 +69,14 @@ button:focus {
   width: 100%;
   font-size: 13px;
 }
-
+.console input.right {
+  text-align: right;
+}
 .inputBox {
   width: 78px;
   border: 1px solid black;
   height: 38px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 span {
