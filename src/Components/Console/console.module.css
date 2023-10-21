@@ -67,9 +67,13 @@
 .downloadBtn {
   padding: 0px 28px;
 }
+
 .patternBtn {
   padding: 0px 28px;
   margin-right: 10px;
+}
+#clicked {
+  background-color: gray;
 }
 .console button {
   background-color: black;
@@ -145,5 +149,8 @@ span {
   }
   .hexbox {
     width: 78px;
+  }
+  .patternBtn {
+    margin: 0;
   }
 }

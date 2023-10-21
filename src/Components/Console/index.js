@@ -82,7 +82,11 @@ export default function Console(props) {
         </div>
       </div>
       {/* Random Pattern Button */}
-      <button onClick={props.togglePatterns} className={styles.patternBtn}>
+      <button
+        onClick={props.togglePatterns}
+        className={styles.patternBtn}
+        id={`${props.patterns ? styles.clicked : ""}`}
+      >
         Patterns
       </button>
       {/* Download Button */}
