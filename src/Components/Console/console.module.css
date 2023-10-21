@@ -18,10 +18,7 @@
   margin-right: 20px;
   line-height: 0;
 }
-.colorControls {
-  display: flex;
-  justify-content: space-between;
-}
+
 .box {
   margin-top: -18px;
   font-size: x-small;
@@ -53,17 +50,7 @@
 .hexinput {
   padding-left: 5px;
 }
-.input {
-  border: none;
-  width: 100%;
-  font-size: 13px;
-}
-.button {
-  background-color: black;
-  border: none;
-  color: white;
-  height: 40px;
-}
+
 .downloadBtn {
   padding: 0px 28px;
 }
@@ -90,9 +77,7 @@ button:focus {
   width: 100%;
   font-size: 13px;
 }
-.console input.right {
-  text-align: right;
-}
+
 .inputBox {
   width: 78px;
   border: 1px solid black;
