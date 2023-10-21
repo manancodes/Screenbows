@@ -26,7 +26,7 @@ export default function Console(props) {
         {/* Random Color Button */}
         <button
           onClick={getRandomColors}
-          className={`${styles.newColorBtn} ${styles.button}`}
+          className={`${styles.newColorBtn} `}
         >
           <span
             style={{ color: "white", padding: 0 }}
@@ -41,7 +41,7 @@ export default function Console(props) {
           <div className={`${styles.inputContainer} ${styles.hexbox}`}>
             <span className={styles.hexspan}>#</span>
             <input
-              className={`${styles.hexinput} ${styles.input}`}
+              className={`${styles.hexinput}`}
               maxLength="7"
               //this will remove the hashtag(#)
               value={primaryColor ? parseDisplayValue(primaryColor) : ""}
