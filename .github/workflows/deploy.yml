@@ -40,6 +40,4 @@ jobs:
           npm run clean
       - name: Deploy Complete
         run: |
-          echo "Deployment completed successfully"
-
-        
+          echo "Deployment completed successfully"   
