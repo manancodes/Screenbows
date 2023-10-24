@@ -67,14 +67,6 @@
 .downloadBtn {
   padding: 0px 28px;
 }
-
-.patternBtn {
-  padding: 0px 28px;
-  margin-right: 10px;
-}
-#clicked {
-  background-color: gray;
-}
 .console button {
   background-color: black;
   border: none;
@@ -152,5 +144,55 @@ span {
   }
   .patternBtn {
     margin: 0;
+    margin-bottom: 2px;
   }
+
+  .patterns {
+    padding-top: 20px;
+  }
+}
+.patternBtn {
+  padding: 0px 28px;
+  margin-right: 10px;
+}
+
+.console .patternBtn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: relative;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.console .toggleContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s;
+  top: 0;
+}
+
+.console .toggleSwitch {
+  width: 25px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  transition: transform 0.3s;
+  top: 0;
+}
+
+.console .toggleSwitch.on {
+  transform: translateX(30px);
+  background-color: green;
+  border-color: green;
+}
+
+.console .toggleSwitch.off {
+  background-color: black;
 }
