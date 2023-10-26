@@ -42,6 +42,12 @@
 .hexinput {
   padding-left: 5px;
 }
+.colorPicker {
+  position: absolute;
+  top: 100%;
+  left: -40%;
+  z-Index: 1000,
+}
 
 .downloadBtn {
   padding: 0px 28px;
@@ -119,5 +125,11 @@ span {
   }
   .hexbox {
     width: 78px;
+  }
+  .colorPicker {
+    position: absolute;
+    top: 100%;
+    left: -150%;
+    z-Index: 1000,
   }
 }
