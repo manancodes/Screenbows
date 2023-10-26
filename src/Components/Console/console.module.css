@@ -113,6 +113,51 @@ span {
   display: flex;
   justify-content: space-between;
 }
+
+.patternBtn {
+  padding: 0px 28px;
+  margin-right: 10px;
+}
+
+.console .patternBtn {
+  width: 80px;
+  height: 40px;
+  background-color: transparent;
+  position: relative;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.console .toggleContainer {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s;
+  top: 0;
+}
+
+.console .toggleSwitch {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  position: absolute;
+  transition: transform 0.3s;
+  top: 0;
+}
+
+.console .toggleSwitch.on {
+  transform: translateX(40px);
+  background-color: black;
+}
+
+.console .toggleSwitch.off {
+  background-color: black;
+}
+
 @media only screen and (max-width: 720px) {
   .console {
     width: 50%;
@@ -150,49 +195,4 @@ span {
   .patterns {
     padding-top: 20px;
   }
-}
-.patternBtn {
-  padding: 0px 28px;
-  margin-right: 10px;
-}
-
-.console .patternBtn {
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  position: relative;
-  border: 1px solid black;
-  transition: background-color 0.3s;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.console .toggleContainer {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  position: absolute;
-  left: 0;
-  transition: transform 0.3s;
-  top: 0;
-}
-
-.console .toggleSwitch {
-  width: 25px;
-  height: 40px;
-  background-color: white;
-  border: 1px solid black;
-  position: absolute;
-  transition: transform 0.3s;
-  top: 0;
-}
-
-.console .toggleSwitch.on {
-  transform: translateX(30px);
-  background-color: green;
-  border-color: green;
-}
-
-.console .toggleSwitch.off {
-  background-color: black;
 }
