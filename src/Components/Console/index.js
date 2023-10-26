@@ -5,7 +5,7 @@ import domtoimage from "dom-to-image";
 import { saveAs } from "file-saver";
 
 export default function Console(props) {
-  var { primaryColor, getRandomColors } = props;
+  var { primaryColor, getRandomColors, handleColorChange } = props;
   const downloadHandler = (event) => {
     event.preventDefault();
     console.log(primaryColor.length, primaryColor);
