@@ -6,7 +6,7 @@
 
 ## Proposed Changes
 
-Briefly describe the changes you've made in this pull request.
+<!-- Briefly describe the changes you've made in this pull request. -->
 
 ## Checklist
 
