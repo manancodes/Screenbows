@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 600px;
+  width: 700px;
   height: 90px;
   padding: 30px;
   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
@@ -15,7 +15,7 @@
   width: 40px;
   padding: 0;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 35px;
   line-height: 0;
 }
 .colorControls {
@@ -29,6 +29,7 @@
 .box > p {
   margin: 0;
   margin-bottom: 3px;
+  margin-right: 35px;
 }
 .inputContainer {
   width: 78px;
@@ -41,7 +42,6 @@
 .hexbox {
   width: 110px;
   justify-content: flex-start;
-  margin-right: 20px;
 }
 .hexspan {
   padding-left: 10px;
@@ -100,6 +100,7 @@ button:focus {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 10px;
 }
 span {
   color: grey;
@@ -116,7 +117,7 @@ span {
 
 .patternBtn {
   padding: 0px 28px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .console .patternBtn {
@@ -150,7 +151,7 @@ span {
 }
 
 .console .toggleSwitch.on {
-  transform: translateX(40px);
+  transform: translateX(38px);
   background-color: black;
 }
 
