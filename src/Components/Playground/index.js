@@ -6,7 +6,13 @@ import Console from "../Console";
 import GithubButton from "../GithubButton";
 
 function Playground(props) {
-  var { primaryColor, secondaryColor, getRandomColors, randomPattern } = props;
+  var {
+    primaryColor,
+    secondaryColor,
+    getRandomColors,
+    randomPattern,
+    handleColorChange,
+  } = props;
   const [dimensions, setdimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth,
@@ -54,6 +60,7 @@ function Playground(props) {
       <Console
         primaryColor={primaryColor}
         getRandomColors={getRandomColors}
+        handleColorChange={handleColorChange}
         changeDimensions={changeDimensions}
         dimensions={dimensions}
         togglePatterns={togglePatterns}

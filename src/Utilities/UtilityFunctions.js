@@ -1,18 +1,18 @@
 export const randomColorGenerator = (hex) => {
-  const primary = typeof hex == "string" ? parseInput(hex) : primaryColor();
-  const secondary = secondaryColor(primary);
+  const primary = typeof hex == "string" ? parseInput(hex) : makePrimaryColor();
+  const secondary = makeSecondaryColor(primary);
   return { primary, secondary };
 };
 
 //generate a random color for every refresh
-const primaryColor = () => {
+const makePrimaryColor = () => {
   const color =
     "#" + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, "0");
   return color;
 };
 
 //get a contrast color according to the background for better visibility
-const secondaryColor = (primary) => {
+export const makeSecondaryColor = (primary) => {
   var r = parseInt(primary.substring(1, 3), 16); // hexToR
   var g = parseInt(primary.substring(3, 5), 16); // hexToG
   var b = parseInt(primary.substring(5, 7), 16); // hexToB
