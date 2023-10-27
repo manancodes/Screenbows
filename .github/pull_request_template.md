@@ -26,16 +26,16 @@ Please check all the applicable boxes. To mark a box as done, use the following 
 
 ## Notes to Reviewers
 
-Please provide any additional context or information for the reviewers. If there are specific areas or concerns you'd like the reviewers to focus on, mention them here.
+<!-- Please provide any additional context or information for the reviewers. If there are specific areas or concerns you'd like the reviewers to focus on, mention them here. -->
 
 ## Screenshots
 
-If your changes include any visual or UI updates, add relevant screenshots to help reviewers understand the changes better.
+<!-- If your changes include any visual or UI updates, add relevant screenshots to help reviewers understand the changes better. -->
 
 ## Test Plan
 
-If applicable, describe the steps you've taken to test your changes.
+<!-- If applicable, describe the steps you've taken to test your changes. -->
 
 ## Related Issues
 
-List any related issues or pull requests that are addressed or linked to this PR.
+<!-- List any related issues or pull requests that are addressed or linked to this PR. -->
