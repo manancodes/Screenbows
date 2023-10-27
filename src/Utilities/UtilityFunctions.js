@@ -37,3 +37,63 @@ export const parseDisplayValue = (val) => {
   }
   return value?.toUpperCase();
 };
+
+// get random pattern from a list
+export const randomPattern = (primaryColor, secondaryColor) => {
+  let temp;
+  if (secondaryColor === "#000000") {
+    temp = "#ffffff";
+  } else {
+    temp = "#000000";
+  }
+
+  const patterns = [
+    {
+      name: "linear",
+      pattern: `repeating-linear-gradient(
+        45deg,
+        ${temp},
+        ${temp} 10px,
+        ${primaryColor} 10px,
+        ${primaryColor} 20px
+      )`,
+    },
+    {
+      name: "circle",
+      pattern: `repeating-radial-gradient(
+        circle,
+        ${temp},
+        ${temp} 10px,
+        ${primaryColor} 10px, 
+        ${primaryColor} 20px
+      )`,
+    },
+    {
+      name: "dots",
+      pattern: `radial-gradient(
+        circle,
+        ${temp},
+        ${temp} 50%,
+        ${primaryColor} 50%, 
+        ${primaryColor}
+      )`,
+      size: `6px 6px`,
+    },
+    {
+      name: "dots-big",
+      pattern: `radial-gradient(
+        circle,
+        ${temp},
+        ${temp} 50%,
+        ${primaryColor} 50%, 
+        ${primaryColor}
+      )`,
+      size: `20px 20px`,
+    },
+  ];
+
+  const randomPatternObject =
+    patterns[Math.floor(Math.random() * patterns.length)];
+
+  return randomPatternObject;
+};
