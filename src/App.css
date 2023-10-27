@@ -4,13 +4,7 @@
 }
 body {
   margin: 0;
-  font-family: "Space Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-button:hover {
-  opacity: 0.8;
-}
-button:active {
-  opacity: 0.6;
-}
+

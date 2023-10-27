@@ -11,17 +11,13 @@
   margin: 100px;
 }
 .newColorBtn {
-  height: 38px;
   width: 40px;
   padding: 0;
   margin: 0;
   margin-right: 35px;
   line-height: 0;
 }
-.colorControls {
-  display: flex;
-  justify-content: space-between;
-}
+
 .box {
   margin-top: -18px;
   font-size: x-small;
@@ -32,11 +28,9 @@
   margin-right: 35px;
 }
 .inputContainer {
-  width: 78px;
   border: 1px solid black;
   height: 38px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 .hexbox {
@@ -44,8 +38,6 @@
   justify-content: flex-start;
 }
 .hexspan {
-  padding-left: 10px;
-  padding-right: 0px;
   color: grey;
   padding: 6px;
   padding-right: 0;
@@ -53,17 +45,7 @@
 .hexinput {
   padding-left: 5px;
 }
-.input {
-  border: none;
-  width: 100%;
-  font-size: 13px;
-}
-.button {
-  background-color: black;
-  border: none;
-  color: white;
-  height: 40px;
-}
+
 .downloadBtn {
   padding: 0px 28px;
 }
@@ -98,7 +80,6 @@ button:focus {
   border: 1px solid black;
   height: 38px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   margin-right: 10px;
 }

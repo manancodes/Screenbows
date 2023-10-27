@@ -17,7 +17,15 @@ function App() {
     setSecondaryColor(secondary);
   };
   useEffect(() => {
-    getRandomColors();
+    function watchSpace(e) {
+      if(e.keyCode === 32) getRandomColors()
+    }
+    window.addEventListener("keydown", watchSpace)
+    return function() {
+        // Cleaning up...
+        window.removeEventListener("keydown", watchSpace)
+        getRandomColors();
+    }
   }, []);
 
   return (
