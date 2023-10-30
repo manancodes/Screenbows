@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./console.module.css";
 import { parseDisplayValue } from "../../Utilities/UtilityFunctions";
 import domtoimage from "dom-to-image";
 import { saveAs } from "file-saver";
+import { SketchPicker } from "react-color";
 
 export default function Console(props) {
-  var { primaryColor, getRandomColors } = props;
+  var { primaryColor, getRandomColors, handleColorChange } = props;
+
+  // State to handle color-picker pop-up
+  const [showColorPicker, setShowColorPicker] = useState(false);
+  // Function to open the color picker
+  const openColorPicker = (e) => {
+    e.stopPropagation();
+    setShowColorPicker(true);
+  };
+  // Function to close the color picker
+  const closeColorPicker = () => {
+    setShowColorPicker(false);
+  };
+  // A click event listener to the document for closing the color-picker pop-up
+  useEffect(() => {
+    document.addEventListener('click', closeColorPicker);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('click', closeColorPicker);
+    };
+  }, []);
+
   const downloadHandler = (event) => {
     event.preventDefault();
     console.log(primaryColor.length, primaryColor);
@@ -36,9 +59,9 @@ export default function Console(props) {
           </span>
         </button>
         {/* Hex Input Box */}
-        <div className={styles.box} onClick={props?.opener}>
+        <div className={styles.box} onClick={props?.opener} style={{position: 'relative'}}>
           <p>hex code</p>
-          <div className={`${styles.inputContainer} ${styles.hexbox}`}>
+          <div className={`${styles.inputContainer} ${styles.hexbox}`} onClick={openColorPicker}>
             <span className={styles.hexspan}>#</span>
             <input
               className={`${styles.hexinput}`}
@@ -50,6 +73,20 @@ export default function Console(props) {
               }}
             />
           </div>
+          {
+            // Display color picker if showColorPicker=true
+            showColorPicker && (
+              <div
+                className={styles.colorPicker}
+                onClick={openColorPicker}
+              >
+                <SketchPicker
+                  color={primaryColor}
+                  onChange={handleColorChange}
+                />
+              </div>
+            )
+          }
         </div>
       </div>
       {/* Size Controls */}
@@ -81,6 +118,21 @@ export default function Console(props) {
           </div>
         </div>
       </div>
+      {/* Random Pattern Button */}
+      <div className={styles.box}>
+        <p className={styles.patterns}>patterns</p>
+        <button onClick={props.togglePatterns} className={styles.patternBtn}>
+          <div className={`${styles.toggleContainer}`}>
+            <div
+              className={`${styles.toggleSwitch} ${
+                props.patterns ? styles.on : styles.off
+              }`}
+            ></div>
+          </div>
+        </button>
+      </div>
+
+      {/* Download Button */}
       <button onClick={downloadHandler} className={styles.downloadBtn}>
         DOWNLOAD
       </button>
