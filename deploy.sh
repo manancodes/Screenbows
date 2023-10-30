@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Build your project (if required)
+# Build project
 npm install
 npm run build
 
