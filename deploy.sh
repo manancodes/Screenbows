@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Build your project (if required)
+npm install
+npm run build
+
 # Output debugging information
 echo "Script executed successfully until this point."
 
