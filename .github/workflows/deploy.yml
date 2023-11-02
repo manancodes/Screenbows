@@ -12,6 +12,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+        env:
+          CI: true
   
       - name: Deploy with gh-pages
         run: |
